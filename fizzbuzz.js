@@ -33,5 +33,11 @@ submit.addEventListener("click", (e) => {
 		document.getElementById('arrayList').appendChild(node);	
 	}
 	
+	const clearBtn = document.createElement("BUTTON");
+	const clearText = document.createTextNode("Clear")
+	clearBtn.appendChild(clearText);
+	document.getElementById('inputForm').appendChild(clearBtn);
+	clearBtn.setAttribute("id", "clearBtn");
 });
+
 
